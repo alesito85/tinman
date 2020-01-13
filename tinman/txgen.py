@@ -298,7 +298,7 @@ def update_accounts(account_stats, conf, keydb, silent=True):
     account_names = account_stats["account_names"]
     num_accounts = len(account_names)
     porter_wif = keydb.get_privkey("porter")
-    tnman = conf["accounts"]["manager"]["name"]
+    tnman = "alice"#conf["accounts"]["manager"]["name"]
     accounts_updated = 0
 
     with open(conf["snapshot_file"], "rb") as f:
